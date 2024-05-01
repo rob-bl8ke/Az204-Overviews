@@ -1,0 +1,107 @@
+@startmindmap "AZ-400 - Explore Azure Pipelines"
+
+' https://plantuml.com/theme
+!theme sketchy
+skinparam backgroundColor #969998
+
+title Develop Azure compute solutions\nContainerization
+caption Develop Azure compute solutions
+center footer Develop Azure compute solutions
+
+<style>
+    mindMapDiagram {
+        .root {
+            BackgroundColor darkblue
+            LineColor black
+            FontColor white
+        }
+
+        node {
+            FontColor white
+            LineColor black
+            BackgroundColor black
+            Shadowing 2.0
+            RoundCorner 25
+        }
+        :depth(0) {
+            FontColor black
+            LineColor white
+            BackgroundColor white
+            Shadowing 0.0
+        }
+        :depth(1) {
+            FontColor black
+            BackgroundColor darkgrey
+            Shadowing 2.0
+        }
+
+        arrow {
+            LineStyle 4
+            LineThickness 0.5
+            LineColor green
+        }
+
+        boxless {
+            FontColor black
+            Margin 10
+            Padding 10
+            MaximumWidth 400
+        }
+    }
+</style>
+
+
++ Containerized\nSolutions <<root>>
+++ Azure Container Registry (ACR)
++++_ Pull images from registry
+++++_ to
++++++ Scalable orchestration systems
++++++ Azure services
++++ ACR Tasks
+++++_ Image building,\nmaintenance
++++++_ Linux
++++++_ Windows
++++++_ ARM
+++++_ Supported\ntask scenarios
++++++ Quick Tasks
+++++++_ Simple build and push
++++++_ Automatically\ntriggered tasks
+++++++ Multi-step task
++++++++_ Multi image
++++++++_ YAML file
+++++++ Scheduled tasks 
+
+++ Azure Container Instances
++++_ operate in isolated containers
+++++ Simple
++++++_ No orchestration or automatic scaling
++++_ usage
+++++_ Simple applications, task automation, build jobs and prototypes
++++ Container Group
+++++_ share
++++++_ lifecycle
++++++_ resources
++++++_ local network
++++++_ storage
+++++_ Divide a single functional task into multiple container images
+
+-- Scalable Orchestration Systems
+
+--- Azure Container Apps
+----_ Serverless 
+----- Container orchestration
+------_ Microservice applications
+----_ features
+-----_ Robust and dynamic autoscaling
+-----_ Traffic splitting
+-----_ Multiple revisions
+-----_ Traffic splitting
+----- Dapr
+------_ Microservice best practices
+------_ Discoverability, reliable communication, and policies
+------_ Components for external service communication
+
+--- Service Fabric (TBC)
+--- Azure Kubernetes Service (TBC)
+
+@endmindmap
