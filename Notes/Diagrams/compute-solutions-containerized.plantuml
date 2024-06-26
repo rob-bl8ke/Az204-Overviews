@@ -1,4 +1,4 @@
-@startmindmap "AZ-400 - Explore Azure Pipelines"
+@startmindmap "Containerization"
 
 ' https://plantuml.com/theme
 !theme sketchy
@@ -78,12 +78,10 @@ center footer Develop Azure compute solutions
 +++_ usage
 ++++_ Simple applications, task automation, build jobs and prototypes
 +++ Container Group
-++++_ share
-+++++_ lifecycle
-+++++_ resources
-+++++_ local network
-+++++_ storage
 ++++_ Divide a single functional task into multiple container images
+++++_ support separate
++++++_ resource requirements
++++++_ teams
 
 -- Scalable Orchestration Systems
 
